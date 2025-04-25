@@ -146,6 +146,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .Banner {
@@ -229,3 +230,82 @@ body {
     font-size: 18px;
     font-weight: 400;
 }
+
+
+/* SECTION CONTAINER */
+.imageWidth {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #ffffff, #77a1d8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px 150px; /* bottom padding ensures gradient shows on mobile */
+    box-sizing: border-box;
+  }
+  
+  /* IMAGE WRAPPER */
+  .image-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  /* MAIN IMAGE */
+  .main-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+  }
+  
+  /* OVERLAY IMAGE */
+  .overlay-img {
+    position: absolute;
+    bottom: 0;
+    right: -30px; /* overlaps slightly on desktop */
+    width: 28%;
+    max-width: 230px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* ====== MEDIA QUERIES ====== */
+  
+  /* Medium laptop (max 1280px) */
+  @media (max-width: 1280px) {
+    .overlay-img {
+      right: -20px;
+      width: 30%;
+    }
+  }
+  
+  /* Tablet */
+  @media (max-width: 1024px) {
+    .overlay-img {
+      right: -15px;
+      width: 32%;
+    }
+  }
+  
+  /* Mobile landscape & small tablets */
+  @media (max-width: 768px) {
+    .overlay-img {
+      right: -10px;
+      width: 40%;
+    }
+  }
+  
+  /* Mobile portrait */
+  @media (max-width: 480px) {
+    .imageWidth {
+      padding: 40px 15px 150px;
+    }
+  
+    .overlay-img {
+      right: -5px;
+      width: 50%;
+    }
+  }
+  
