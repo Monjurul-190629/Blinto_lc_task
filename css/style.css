@@ -236,7 +236,7 @@ body {
 .imageWidth {
     width: 100%;
     min-height: 50vh;
-    background: linear-gradient(to bottom, #ffffff, #fff, #563cff);
+    background: linear-gradient(to bottom, #ffffff, #fff, #7f6cff);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -305,6 +305,52 @@ body {
     .overlay-img {
       right: -5px;
       width: 50%;
+    }
+  }
+  
+
+  /* Logo */
+
+  .logoContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  
+  .logoImg {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+  
+  .logoImg:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    .logoImg {
+      width: 100px;
+      gap: 60px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .logoImg {
+      width: 90px;
+      gap: 40px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logoImg {
+      width: 90px;
     }
   }
   
