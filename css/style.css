@@ -235,12 +235,12 @@ body {
 /* SECTION CONTAINER */
 .imageWidth {
     width: 100%;
-    min-height: 100vh;
-    background: linear-gradient(to bottom right, #ffffff, #77a1d8);
+    min-height: 50vh;
+    background: linear-gradient(to bottom, #ffffff, #fff, #563cff);
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 60px 20px 150px; /* bottom padding ensures gradient shows on mobile */
+    padding: 60px 20px 90px; /* bottom padding ensures gradient shows on mobile */
     box-sizing: border-box;
   }
   
@@ -263,7 +263,8 @@ body {
   .overlay-img {
     position: absolute;
     bottom: 0;
-    right: -30px; /* overlaps slightly on desktop */
+    top: 100px;
+    right: -70px; /* overlaps slightly on desktop */
     width: 28%;
     max-width: 230px;
     height: auto;
@@ -271,7 +272,6 @@ body {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   }
   
-  /* ====== MEDIA QUERIES ====== */
   
   /* Medium laptop (max 1280px) */
   @media (max-width: 1280px) {
@@ -285,7 +285,9 @@ body {
   @media (max-width: 1024px) {
     .overlay-img {
       right: -15px;
-      width: 32%;
+      width: 25%;
+      top: 50px;
+      height: 99%;
     }
   }
   
@@ -299,10 +301,7 @@ body {
   
   /* Mobile portrait */
   @media (max-width: 480px) {
-    .imageWidth {
-      padding: 40px 15px 150px;
-    }
-  
+    
     .overlay-img {
       right: -5px;
       width: 50%;
