@@ -315,7 +315,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 80px;
+    column-gap: 80px;
+    row-gap: 30px;
     padding: 40px 20px;
     max-width: 1200px;
     margin: 0 auto;
@@ -351,6 +352,119 @@ body {
   @media (max-width: 480px) {
     .logoImg {
       width: 90px;
+    }
+  }
+  
+
+
+  /* Main features */
+
+  .mainFeatures {
+    max-width: 100%;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 40px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.mainFeatures .Banner {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+
+.mainFeatures .Header {
+    color: #4F46E5;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.mainFeatures .HeaderMain {
+    color: #1E293B;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.mainFeatures .BannerContent {
+    color: #475569;
+    font-size: 16px;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+
+
+
+/* Card section */
+/* Card section */
+.card-section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* default for mobile */
+    gap: 20px;
+    padding: 5px;
+    background-color: #f9fafb;
+    max-width: 1200px;
+    margin: 0 auto; /* center grid */
+  }
+  
+  /* Card style stays same */
+  .card {
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 10px 25px;
+    width: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card .icon {
+    font-size: 36px;
+    color: #4f46e5;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .card h3 {
+    font-size: 22px;
+    color: #1e293b;
+    margin-bottom: 12px;
+    text-align: center;
+    font-weight: 700;
+  }
+  
+  .card p {
+    font-size: 16px;
+    color: #475569;
+    line-height: 1.6;
+    text-align: center;
+  }
+  
+  /* Medium screens */
+  @media (min-width: 640px) {
+    .card-section {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  
+  /* Large screens */
+  @media (min-width: 1024px) {
+    .card-section {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
   
