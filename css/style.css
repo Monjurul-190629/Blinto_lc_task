@@ -16,24 +16,27 @@ body {
     background-color: white;
     color: black;
     position: relative;
-    padding:15px;
+    padding: 15px;
 }
 
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    display : flex;
+    display: flex;
     gap: 10px;
 }
-.logo .logo-bg{
+
+.logo .logo-bg {
     background-color: #4F46E5;
     padding: 5px;
     border-radius: 13px 7px 7px 8px;
     color: white
 }
-.logo .logo-name{
+
+.logo .logo-name {
     padding: 5px;
 }
+
 .nav-links {
     display: flex;
     gap: 1.5rem;
@@ -77,12 +80,12 @@ body {
     border-radius: 20px;
 }
 
-.signup:hover{
+.signup:hover {
     background-color: #4F46E5;
     color: white;
 }
 
-.login:hover{
+.login:hover {
     background-color: transparent;
     color: black;
     border: 1px solid rgba(0, 0, 0, 0.6);
@@ -128,4 +131,101 @@ body {
         z-index: 10;
         color: #475569;
     }
+}
+
+
+/* Banner */
+
+
+.BannerWidth {
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 40px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Banner {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    padding: 1rem;
+}
+
+.Banner .Header {
+    color: #4F46E5;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.Banner .HeaderMain {
+    color: #1E293B;
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.Banner .BannerContent {
+    color: #475569;
+    font-size: 16px;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.Banner .appContent {
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    gap : 30px;
+}
+
+.Banner .appContent .contentBox{
+    width: 132px;
+    height: 44px;
+    border: 1px solid black;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    padding: 8px;
+    gap:10px;
+}
+
+/* Responsive Banner */
+@media (max-width: 768px) {
+    .Banner .HeaderMain {
+        font-size: 40px;
+    }
+
+    .Banner .BannerContent {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Banner .HeaderMain {
+        font-size: 28px;
+    }
+
+    .Banner .Header {
+        font-size: 12px;
+    }
+
+    .Banner .BannerContent {
+        font-size: 13px;
+    }
+}
+
+
+.Banner .BannerContent {
+    color: #475569;
+    font-size: 18px;
+    font-weight: 400;
 }
