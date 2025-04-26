@@ -76,6 +76,10 @@
     .download-section{
         flex-direction: column;
     }
+    .buttonDiv button{
+        padding: 10px 14px;
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 480px) {
