@@ -1,0 +1,150 @@
+.download-section {
+    max-width: 100%;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: row;
+    background-color: #EEF2FF;
+}
+
+.download-section .Banner {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: justify;
+    padding: 1rem;
+}
+
+
+.download-section .HeaderMain {
+    color: #1E293B;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.download-section .BannerContent {
+    color: #475569;
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-weight: 700;
+}
+
+.download-section .buttonDiv {
+    display: flex;
+    gap: 30px;
+    justify-content: start;
+}
+
+.buttonDiv button {
+    border: 1px solid #4F46E5;
+    border-radius: 20px;
+    padding: 14px 20px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+
+
+/* Responsive Banner */
+@media (max-width: 1000px) {
+    .download-section .HeaderMain {
+        font-size: 28px;
+    }
+
+    .download-section .BannerContent {
+        font-size: 16px;
+    }
+    .download-section{
+        flex-direction: column;
+    }
+}
+@media (max-width: 768px) {
+    .download-section .HeaderMain {
+        font-size: 28px;
+    }
+
+    .download-section .BannerContent {
+        font-size: 14px;
+    }
+    .download-section{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .download-section .HeaderMain {
+        font-size: 28px;
+    }
+
+    .download-sectionr .Header {
+        font-size: 14px;
+    }
+
+    .download-section .BannerContent {
+        font-size: 13px;
+    }
+    .download-section{
+        flex-direction: column;
+    }
+}
+
+
+.faq-container .BannerContent {
+    color: #475569;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* Now the Image part */
+.image-box {
+    background-color: #dae2ff; /* light gray */
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-flex {
+    display: flex;
+    gap: 40px; /* smaller gap */
+    align-items: flex-start; /* align top */
+    justify-content: center;
+}
+
+.image-flex img:first-child {
+    margin-top: 50px; /* push first image down */
+}
+
+.image-flex img {
+    width: 140px; /* fixed width */
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 760px) {
+    .image-flex {
+        gap: 10px; /* smaller gap on mobile */
+    }
+
+    .image-box{
+        max-width: 400px;
+    }
+
+    .img-flex img{
+        width: 100px;
+    }
+
+    .image-flex img:first-child {
+        margin-top: 30px; /* smaller push on mobile */
+    }
+}
