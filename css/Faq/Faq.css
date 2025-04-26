@@ -1,0 +1,146 @@
+.faq-container {
+    max-width: 100%;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.faq-container .Banner {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    padding: 1rem;
+}
+
+.faq-container .Header {
+    color: #4F46E5;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.faq-container .HeaderMain {
+    color: #1E293B;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.faq-container .BannerContent {
+    color: #475569;
+    font-size: 16px;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+
+
+
+
+/* Responsive Banner */
+@media (max-width: 768px) {
+    .faq-container .HeaderMain {
+        font-size: 36px;
+    }
+
+    .faq-container .BannerContent {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .faq-container .HeaderMain {
+        font-size: 28px;
+    }
+
+    .faq-container .Header {
+        font-size: 14px;
+    }
+
+    .faq-container.BannerContent {
+        font-size: 13px;
+    }
+}
+
+
+.faq-container .BannerContent {
+    color: #475569;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+/* Main section */
+
+.faq-main {
+    max-width: 700px;
+    margin: auto;
+}
+
+.faq-item {
+    background-color: #CBD5E1;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question {
+    padding: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 800;
+    color: #334155;
+}
+
+.faq-question i{
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 6px;
+
+    font-weight: 800;
+    
+}
+
+.faq-question i {
+    margin-right: 10px;
+}
+
+.faq-answer {
+    background-color: white;
+    padding: 16px;
+    color: #475569;
+    display: none;
+    font-size: 16px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+
+    .faq-question,
+    .faq-answer {
+        padding: 12px;
+    }
+
+    
+}
+
+@media (min-width: 910px) {
+
+    
+    .faq-question{
+        width: 700px;
+    }
+    .faq-answer{
+        width: 700px;
+    }
+}
+
