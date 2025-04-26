@@ -169,3 +169,26 @@
     margin-top: 10px;
   }
   
+
+
+
+  /* Load More Button only mobile devices*/
+.load-more-btn {
+  display: none; /* default hidden */
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #4F46E5;
+  color: white;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+/* Show button only on small devices */
+@media (max-width: 600px) {
+  .load-more-btn {
+      display: block;
+  }
+}
