@@ -190,7 +190,7 @@ body {
   flex-direction: column;
   gap: 40px;
   padding: 20px 30px;
-  
+
 }
 
 .another_section .Banner {
@@ -213,7 +213,8 @@ body {
   font-weight: 800;
   line-height: 44px;
   max-width: 780px;
-  letter-spacing: -0.5px; /* subtle but safe */
+  letter-spacing: -0.5px;
+  /* subtle but safe */
   word-spacing: normal;
   text-align: left;
 }
@@ -232,13 +233,15 @@ body {
   .another_section {
     padding: 20px;
   }
-  .another_section .Banner{
+
+  .another_section .Banner {
     margin-left: 5px;
   }
 
   .another_section .HeaderMain {
     font-size: 25px;
-    letter-spacing: -0.5px; /* fixed unit, subtle adjustment */
+    letter-spacing: -0.5px;
+    /* fixed unit, subtle adjustment */
   }
 
   .another_section .BannerContent {
@@ -296,7 +299,7 @@ body {
   justify-content: center;
 }
 
-.scrollDiv > div {
+.scrollDiv>div {
   margin-bottom: 20px;
   max-width: 400px;
 }
@@ -315,7 +318,7 @@ body {
   margin-bottom: 8px;
 }
 
-.scroll-content{
+.scroll-content {
   font-size: 16px;
   color: #475569;
 }
@@ -324,10 +327,12 @@ body {
 .scrollDivWrapper::-webkit-scrollbar {
   width: 6px;
 }
+
 .scrollDivWrapper::-webkit-scrollbar-track {
   background: #dbeafe;
   border-radius: 4px;
 }
+
 .scrollDivWrapper::-webkit-scrollbar-thumb {
   background-color: #3b82f6;
   border-radius: 4px;
@@ -349,7 +354,7 @@ body {
 }
 
 /* Image wrapper */
-.scroll-image > div {
+.scroll-image>div {
   flex: 1;
   display: flex;
   justify-content: center;
@@ -379,25 +384,29 @@ body {
   .scroll {
     flex-direction: column;
     align-items: center;
-    
+
   }
+
   .scrollDivWrapper {
     width: 90%;
     max-width: 600px;
   }
+
   .scrollDiv {
     align-items: flex-start;
   }
+
   .scroll-image {
     margin-top: 20px;
     width: 400px;
     transform: none;
   }
+
   .scroll-image img {
     width: 160px;
   }
 
-  
+
 }
 
 /* Tablets */
@@ -407,21 +416,26 @@ body {
     padding-left: 10px;
     gap: 20px;
   }
+
   .scrollDivWrapper {
     max-width: 100%;
     padding: 0 8px;
   }
+
   .scrollDiv {
     align-items: center;
   }
-  .scrollDiv > div {
+
+  .scrollDiv>div {
     max-width: 90%;
   }
+
   .scroll-image {
     width: 300px;
     gap: 20px;
     padding: 12px;
   }
+
   .scroll-image img {
     width: 120px;
   }
@@ -432,16 +446,20 @@ body {
   .scroll {
     padding: 10px;
   }
+
   .scrollDivWrapper {
     max-height: 220px;
     width: 100%;
   }
+
   .scrollDiv p {
     font-size: 16px;
   }
+
   .scroll-header {
     font-size: 16px;
   }
+
   .scroll-image {
     flex-direction: column;
     justify-content: center;
@@ -450,11 +468,13 @@ body {
     padding: 12px;
     gap: 16px;
   }
+
   .scroll-image img {
     width: 100px;
     transform: rotate(-15deg) translateY(-5px);
   }
-  .another_section{
+
+  .another_section {
     padding: 20px 0px;
   }
 }

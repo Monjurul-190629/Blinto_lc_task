@@ -61,10 +61,12 @@
     .download-section .BannerContent {
         font-size: 16px;
     }
-    .download-section{
+
+    .download-section {
         flex-direction: column;
     }
 }
+
 @media (max-width: 768px) {
     .download-section .HeaderMain {
         font-size: 28px;
@@ -73,10 +75,12 @@
     .download-section .BannerContent {
         font-size: 14px;
     }
-    .download-section{
+
+    .download-section {
         flex-direction: column;
     }
-    .buttonDiv button{
+
+    .buttonDiv button {
         padding: 10px 14px;
         font-size: 14px;
     }
@@ -94,7 +98,8 @@
     .download-section .BannerContent {
         font-size: 13px;
     }
-    .download-section{
+
+    .download-section {
         flex-direction: column;
     }
 }
@@ -108,7 +113,8 @@
 
 /* Now the Image part */
 .image-box {
-    background-color: #dae2ff; /* light gray */
+    background-color: #dae2ff;
+    /* light gray */
     padding: 20px;
     border-radius: 12px;
     max-width: 800px;
@@ -118,17 +124,21 @@
 
 .image-flex {
     display: flex;
-    gap: 40px; /* smaller gap */
-    align-items: flex-start; /* align top */
+    gap: 40px;
+    /* smaller gap */
+    align-items: flex-start;
+    /* align top */
     justify-content: center;
 }
 
 .image-flex img:first-child {
-    margin-top: 50px; /* push first image down */
+    margin-top: 50px;
+    /* push first image down */
 }
 
 .image-flex img {
-    width: 140px; /* fixed width */
+    width: 140px;
+    /* fixed width */
     height: auto;
     border-radius: 8px;
     object-fit: cover;
@@ -137,18 +147,20 @@
 /* Responsive for smaller screens */
 @media (max-width: 760px) {
     .image-flex {
-        gap: 10px; /* smaller gap on mobile */
+        gap: 10px;
+        /* smaller gap on mobile */
     }
 
-    .image-box{
+    .image-box {
         max-width: 400px;
     }
 
-    .img-flex img{
+    .img-flex img {
         width: 100px;
     }
 
     .image-flex img:first-child {
-        margin-top: 30px; /* smaller push on mobile */
+        margin-top: 30px;
+        /* smaller push on mobile */
     }
 }

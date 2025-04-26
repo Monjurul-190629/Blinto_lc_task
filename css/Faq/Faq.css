@@ -101,13 +101,13 @@
     color: #334155;
 }
 
-.faq-question i{
+.faq-question i {
     border: 1px solid black;
     border-radius: 50%;
     padding: 6px;
 
     font-weight: 800;
-    
+
 }
 
 .faq-question i {
@@ -130,17 +130,17 @@
         padding: 12px;
     }
 
-    
+
 }
 
 @media (min-width: 910px) {
 
-    
-    .faq-question{
+
+    .faq-question {
         width: 700px;
     }
-    .faq-answer{
+
+    .faq-answer {
         width: 700px;
     }
 }
-
