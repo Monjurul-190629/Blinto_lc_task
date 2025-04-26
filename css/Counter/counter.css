@@ -1,0 +1,104 @@
+/* Counter section 8 */
+
+.counter_section {
+    max-width: 100%;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 40px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .counter_section .Banner {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  
+  
+  .counter_section .Header {
+    color: #4F46E5;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .counter_section .HeaderMain {
+    color: #1E293B;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1.2;
+  }
+  
+  .counter_section .BannerContent {
+    color: #475569;
+    font-size: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  /* Responsive Banner */
+  @media (max-width: 768px) {
+    .counter_section .HeaderMain {
+      font-size: 40px;
+    }
+  
+    .counter_section .BannerContent {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .counter_section .HeaderMain {
+      font-size: 28px;
+    }
+  
+    .counter_section .Header {
+      font-size: 20px;
+    }
+  
+    .counter_section .BannerContent {
+      font-size: 18px;
+    }
+  }
+  
+  
+  /* stat */
+  .stat-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 10px 20px;
+  }
+  
+  .stat-card {
+    background-color: #f9fafb;
+    padding: 20px 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    min-width: 150px;
+  }
+  
+  .stat-card p:first-child {
+    font-size: 60px;
+    font-weight: bold;
+    color: #4f46e5;
+  }
+  
+  .stat-card p:last-child {
+    font-size: 18px;
+    color: #475569;
+    font-weight: bold;
+  }
+  
+  

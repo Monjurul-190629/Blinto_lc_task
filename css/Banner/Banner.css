@@ -1,0 +1,177 @@
+/* Banner */
+
+
+.BannerWidth {
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 40px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .Banner {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .Banner .Header {
+    color: #4F46E5;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .Banner .HeaderMain {
+    color: #1E293B;
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 1.2;
+  }
+  
+  .Banner .BannerContent {
+    color: #475569;
+    font-size: 16px;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  .Banner .appContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .Banner .appContent .contentBox {
+    width: 132px;
+    height: 44px;
+    border: 1px solid black;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    padding: 8px;
+    gap: 10px;
+  }
+  
+  /* Responsive Banner */
+  @media (max-width: 768px) {
+    .Banner .HeaderMain {
+      font-size: 40px;
+    }
+  
+    .Banner .BannerContent {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .Banner .HeaderMain {
+      font-size: 28px;
+    }
+  
+    .Banner .Header {
+      font-size: 14px;
+    }
+  
+    .Banner .BannerContent {
+      font-size: 14px;
+    }
+  }
+  
+  
+  .Banner .BannerContent {
+    color: #475569;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+
+  
+/* SECTION CONTAINER */
+.imageWidth {
+    width: 100%;
+    min-height: 50vh;
+    background: linear-gradient(to bottom, #ffffff, #fff, #7f6cff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px 90px;
+    /* bottom padding ensures gradient shows on mobile */
+    box-sizing: border-box;
+  }
+  
+  /* IMAGE WRAPPER */
+  .image-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  /* MAIN IMAGE */
+  .main-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+  }
+  
+  /* OVERLAY IMAGE */
+  .overlay-img {
+    position: absolute;
+    bottom: 0;
+    top: 100px;
+    right: -70px;
+    /* overlaps slightly on desktop */
+    width: 28%;
+    max-width: 230px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  
+  /* Medium laptop (max 1280px) */
+  @media (max-width: 1280px) {
+    .overlay-img {
+      right: -20px;
+      width: 30%;
+    }
+  }
+  
+  /* Tablet */
+  @media (max-width: 1024px) {
+    .overlay-img {
+      right: -15px;
+      width: 25%;
+      top: 50px;
+      height: 99%;
+    }
+  }
+  
+  /* Mobile landscape & small tablets */
+  @media (max-width: 768px) {
+    .overlay-img {
+      right: -10px;
+      width: 40%;
+    }
+  }
+  
+  /* Mobile portrait */
+  @media (max-width: 480px) {
+  
+    .overlay-img {
+      right: -5px;
+      width: 50%;
+    }
+  }
+  
