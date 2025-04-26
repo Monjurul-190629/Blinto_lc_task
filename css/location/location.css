@@ -1,0 +1,137 @@
+.location-container {
+    max-width: 100%;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 100px;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+  }
+  
+  .location-container .Banner {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: justify;
+    padding: 1rem;
+  }
+  
+  .location-container .Header {
+    color: #4F46E5;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .location-container .HeaderMain {
+    color: #1E293B;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1.2;
+  }
+  
+  .location-container .BannerContent {
+    color: #475569;
+    font-size: 16px;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  .location-container .appContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  
+  
+  /* Responsive Banner */
+  @media (max-width: 768px) {
+    .location-container .HeaderMain {
+      font-size: 36px;
+    }
+  
+    .location-container .BannerContent {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .location-container .HeaderMain {
+      font-size: 28px;
+    }
+  
+    .location-container .Header {
+      font-size: 14px;
+    }
+  
+    .location-container .BannerContent {
+      font-size: 13px;
+    }
+  }
+  
+  
+  .location-container .BannerContent {
+    color: #475569;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .location-card {
+    display: grid;
+    gap: 40px;
+    padding: 20px;
+    
+  }
+
+  
+  /* 1 card per row for small devices */
+  @media (max-width: 640px) {
+    .location-card {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* 2 cards per row for medium devices */
+  @media (min-width: 641px) and (max-width: 1024px) {
+    .location-card {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* 4 cards per row for large devices */
+  @media (min-width: 1025px) {
+    .location-card {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  /* Optional: Some basic styles for inside the card */
+  .location-card div {
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: justify;
+    max-width: 400px;
+  }
+  
+  .location-card .icon {
+    font-size: 30px;
+    color: #4F46E5;
+    margin-bottom: 18px;
+  }
+  
+  .location-card .heading {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 18px;
+  }
+  
+  .location-card .content {
+    font-size: 16px;
+    color: #1E293B;
+  }
+  
